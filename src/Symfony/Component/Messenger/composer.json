@@ -27,7 +27,6 @@
         "symfony/dependency-injection": "^4.4|^5.0",
         "symfony/event-dispatcher": "^4.4|^5.0",
         "symfony/http-kernel": "^4.4|^5.0",
-        "symfony/lock": "^4.4|^5.0",
         "symfony/process": "^4.4|^5.0",
         "symfony/property-access": "^4.4|^5.0",
         "symfony/serializer": "^4.4|^5.0",
@@ -42,7 +41,8 @@
         "symfony/http-kernel": "<4.4"
     },
     "suggest": {
-        "enqueue/messenger-adapter": "For using the php-enqueue library as a transport."
+        "enqueue/messenger-adapter": "For using the php-enqueue library as a transport.",
+        "symfony/lock": "For using --name parameter for messenger:consume command"
     },
     "autoload": {
         "psr-4": { "Symfony\\Component\\Messenger\\": "" },
